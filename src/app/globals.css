@@ -20,13 +20,23 @@
 }
 
 body {
+  padding-top: 32px;
   color: var(--Black);
   background: var(--Gray-03);
   font-family: --font-onest, Inter, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
 }
+
+.orange-button {
+  color: var(--White, #FFF);
+  background: var(--Orange, #FF5900);
+}
+
+.black-button {
+  background: var(--Black, #1D1D1B);
+}
+

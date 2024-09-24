@@ -1,0 +1,40 @@
+.header {
+
+  :global {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0 14px 29px;
+    }
+  }
+}
+
+.logo {
+  color: var(--black, #1D1D1B);
+  text-align: center;
+  font-size: 21.488px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36.837px;
+  letter-spacing: 0.767px;
+  border-radius: 10px;
+  background: var(--white, #FFF);
+  padding: 1px 48px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  padding: 10px 32px;
+  color: var(--black, #1D1D1B);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.5px;
+}
