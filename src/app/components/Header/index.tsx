@@ -9,11 +9,11 @@ const Header: React.FC = () => {
                     Logo
                 </div>
                 <ul className={styles.list}>
-                    <li>
+                    <li className={styles.item}>
                         <a className={styles.link} href="">Преимущества</a>
                     </li>
-                    <li>
-                        <a href="">Как работаем</a>
+                    <li className={styles.item}>
+                        <a className={styles.link} href="">Как работаем</a>
                     </li>
                 </ul>
             </div>

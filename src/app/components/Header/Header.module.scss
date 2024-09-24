@@ -28,8 +28,19 @@
   align-items: center;
 }
 
-.link {
+.item {
   padding: 10px 32px;
+
+  &:hover .link {
+    color: var(--Orange)
+  }
+
+  &:active .link {
+    border-bottom: 1px solid var(--Orange);
+  }
+}
+
+.link {
   color: var(--black, #1D1D1B);
   text-align: center;
   font-size: 14px;
@@ -37,4 +48,5 @@
   font-weight: 500;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.5px;
+  transition: color 0.2s ease-in-out;
 }

@@ -34,9 +34,22 @@ body {
 .orange-button {
   color: var(--White, #FFF);
   background: var(--Orange, #FF5900);
+
+
+  &:hover {
+    background: var(--Dark-orange, #E0570E);
+  }
+
+  &:active {
+    background: var(--Dark-orange, #E0570E);
+  }
 }
 
 .black-button {
   background: var(--Black, #1D1D1B);
+
+  &:hover {
+    background: var(--Gray-01, #A4ADAC);
+  }
 }
 

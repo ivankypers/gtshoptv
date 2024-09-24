@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Main.module.scss'
 
-import Button from '../../components/Button';
+import { Button } from '../../components';
 
 const Main: React.FC = () => {
     return (
