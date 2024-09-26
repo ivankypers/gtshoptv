@@ -9,9 +9,9 @@ const Partners: React.FC = () =>{
            <div className="container">
                 <h2 className={styles.title}>Наши партнёры по монетизации</h2>
                 <div className={styles.list}>
-                    <Image src='/ClickWave.png' alt="clickwave" width="177" height="55"/>
-                    <Image src='/zyphronix.png' alt="zyphronix" width="101" height="70"/>
-                    <Image src='/novasphere 1.png' alt="novasphere" width="175" height="45"/>
+                    <Image className={styles.image} src='/ClickWave.png' alt="clickwave" width="177" height="55"/>
+                    <Image className={styles.image} src='/zyphronix.png' alt="zyphronix" width="101" height="70"/>
+                    <Image className={styles.image} src='/novasphere 1.png' alt="novasphere" width="175" height="45"/>
                 </div>
            </div>
        </section>

@@ -21,6 +21,7 @@
   border-radius: 10px;
   background: var(--white, #FFF);
   padding: 1px 48px;
+  z-index: 112;
 }
 
 .list {
@@ -161,4 +162,21 @@
   .menuOpen {
     right: 0;
   }
+}
+
+
+@media (max-width: 430px) {
+  .menu {
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: -100%;
+    transition: top 0.5s cubic-bezier(0.2, 0.2, 0.2, 1);
+
+  }
+
+  .menuOpen {
+    top: 0;
+  }
+  
 }

@@ -66,6 +66,10 @@
   background: var(--Black, #000);
   color: var(--White, #FFF);
   max-width: 210px;
+
+  &:hover {
+    background: var(--Gray-01, #A4ADAC);
+  }
 }
 
 @media (max-width: 988px) {
@@ -86,6 +90,32 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px; /* 142.857% */
+  }
+
+
+}
+
+@media (max-width: 767px) {
+  .reports {
+    padding-bottom: 420px;
+    :global {
+      .container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+    }
+  }
+
+
+  .image {
+    max-width: 500px;
+    max-height: 335px;
+    flex-shrink: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    top: unset;
+    transform: translate(0);
   }
 
 

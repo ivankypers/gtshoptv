@@ -77,4 +77,37 @@
     font-weight: 400;
     line-height: 20px; /* 142.857% */
   }
+
+  .button {
+    padding: 6px 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .info {
+
+    :global {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+      }
+    }
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .buttonWrap {
+    justify-content: center;
+  }
+
+  .dsc {
+    max-width: 430px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }

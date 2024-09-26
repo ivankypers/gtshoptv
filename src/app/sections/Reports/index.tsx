@@ -28,7 +28,6 @@ const Reports: React.FC = () => {
 
                 <Image className={styles.image} src='/reportsbg.png' alt='stats' width={721} height={482} />
 
-
             </div>
         </section>
     )

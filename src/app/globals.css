@@ -54,5 +54,13 @@ body {
   &:hover {
     background: var(--Gray-01, #A4ADAC);
   }
+
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .black-button:hover,
+  .orange-button:hover {
+    background-color: inherit !important;
+    color: inherit !important;
+  }
+}

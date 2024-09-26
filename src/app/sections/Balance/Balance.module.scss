@@ -134,5 +134,43 @@
     line-height: 16px; /* 133.333% */
   }
 
+  .image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .balance {
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+    :global {
+      .container {
+        gap: 30px;
+      }
+    }
+  }
+
+
+
+  .wrapper {
+    display: grid;
+    grid-template-rows: 216px 186px 216px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .imageWrap {
+    max-width: 186px;
+    width: 100%;
+  }
+
+  .line {
+
+
+    transform: rotate(90deg);
+  }
+
 
 }
