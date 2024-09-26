@@ -166,6 +166,10 @@
 
 
 @media (max-width: 430px) {
+  .header {
+    padding: 0;
+  }
+
   .menu {
     width: 100%;
     right: 0;
