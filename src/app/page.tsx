@@ -1,5 +1,5 @@
-import Header from './components/Header'
-import { Main, Info, Balance, Partners, Reports } from './sections';
+import {Header} from './components'
+import { Main, Info, Balance, Partners, Reports, Form } from './sections';
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
           <Balance />
           <Partners />
           <Reports />
+          <Form />
       </div>
   );
 }
