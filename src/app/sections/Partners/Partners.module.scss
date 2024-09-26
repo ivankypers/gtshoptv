@@ -1,0 +1,27 @@
+.partners {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background: var(--gray_03, #E8EDEE);
+
+  :global {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.title {
+  color: var(--black, #1D1D1B);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.list {
+  display: flex;
+  align-items: baseline;
+  gap: 81px;
+}
