@@ -23,7 +23,7 @@ const Reports: React.FC = () => {
                             Ежемесячные автоматические отчёты для каждого правообладателя.
                         </li>
                     </ul>
-                    <Button text="Заказать звонок" customClass='black-button' />
+                    <Button text="Заказать звонок" customClass={styles.button} />
                 </div>
 
                 <Image className={styles.image} src='/reportsbg.png' alt='stats' width={721} height={482} />

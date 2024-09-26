@@ -25,3 +25,27 @@
   line-height: 32px; /* 133.333% */
   margin-bottom: 80px;
 }
+
+
+@media (max-width: 988px) {
+  .main {
+    padding: 80px 0 120px 0;
+  }
+
+  .title {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 57.2px */
+    letter-spacing: -2.08px;
+  }
+
+  .subtitle {
+    max-width: 393px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+  
+}

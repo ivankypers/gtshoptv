@@ -29,6 +29,10 @@
   border-radius: 12px;
   border: 1px solid var(--gray_01, #A4ADAC);
   text-align: left;
+
+  &:focus-visible {
+    outline: 1px solid var(--Black, #000);
+  }
 }
 
 .input {
@@ -113,4 +117,20 @@
   a {
     text-decoration-line: underline;
   }
+}
+
+@media (max-width: 988px) {
+  .form {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .messageInput {
+    height: 220px;
+  }
+
+  .label {
+    max-width: unset;
+  }
+
 }

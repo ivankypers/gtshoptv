@@ -5,13 +5,14 @@
     .container {
       display: flex;
       justify-content: space-between;
+      gap: 80px;
     }
   }
 }
 
 .title {
   max-width: 460px;
-  color: var(--black, #1D1D1B);
+  color: var(--Black, #1D1D1B);
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -37,7 +38,7 @@
   gap: 10px;
   flex-shrink: 0;
   border-radius: 10px;
-  color: var(--gray_01, #A4ADAC);
+  color: var(--Gray-01, #A4ADAC);
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -46,16 +47,34 @@
 }
 
 .buttonActive {
-  background: var(--black, #1D1D1B);
-  color: var(--white, #FFF);
+  background: var(--Black, #1D1D1B);
+  color: var(--White, #FFF);
 }
 
 .dsc {
   max-width: 560px;
-  color: var(--black, #1D1D1B);
+  color: var(--Black, #1D1D1B);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px; /* 145.455% */
   height: 96px;
+}
+
+@media (max-width: 988px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .dsc {
+    height: 60px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
 }

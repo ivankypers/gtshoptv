@@ -1,7 +1,8 @@
 .reports {
   position: relative;
-  padding-top: 70px;
+  padding-top: 120px;
   padding-bottom: 60px;
+  background-color: var(--Gray-04);
 
   :global {
 
@@ -52,10 +53,40 @@
 }
 
 .image {
+  max-width: 721px;
+  max-height: 482px;
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 721px;
-  height: 482px;
+  width: 45%;
+}
+
+.button {
+  background: var(--Black, #000);
+  color: var(--White, #FFF);
+  max-width: 210px;
+}
+
+@media (max-width: 988px) {
+  .title {
+    max-width: 268px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 33.6px */
+  }
+
+  .list {
+    margin-bottom: 32px;
+  }
+
+  .item {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+
+
 }
