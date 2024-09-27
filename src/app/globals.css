@@ -58,9 +58,21 @@ body {
 }
 
 @media (hover: none) and (pointer: coarse) {
-  .black-button:hover,
-  .orange-button:hover {
+  button:hover {
     background-color: inherit !important;
     color: inherit !important;
+  }
+
+  .orange-button {
+    &:hover {
+      background: var(--Orange, #FF5900);;
+    }
+  }
+  
+  .black-button {
+    &:hover {
+      background: var(--Black, #1D1D1B);
+    }
+  
   }
 }
