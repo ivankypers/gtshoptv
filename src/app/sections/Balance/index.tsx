@@ -5,16 +5,15 @@ import styles from './Balance.module.scss'
 
 const Balance: React.FC = () => {
 
-
     return (
-        <section className={styles.balance}>
+        <section id="balance" className={styles.balance}>
             <div className="container">
                 <h2 className={styles.title}>
                     Баланс между выручкой и удовлетворённостью пользователей
                 </h2>
                 <div className={styles.wrapper}>
                     <div className={styles.block}>
-                        <Image src='/bullet.svg' alt="buttet" width={32} height={32} />
+                        <Image src='/bullet.svg' alt="bullet" width={32} height={32} />
                         <h3 className={styles.blockTitle}>Частотность
                             под контролем</h3>
                         <p className={styles.blockDsc}>Чтобы не ронять NPS
@@ -48,7 +47,7 @@ const Balance: React.FC = () => {
                         <div className={styles.line}></div>
                     </div>
                     <div className={styles.block}>
-                        <Image src='/bullet.svg' alt="buttet" width={32} height={32}/>
+                        <Image src='/bullet.svg' alt="bullet" width={32} height={32}/>
                         <h3 className={styles.blockTitle}>Максимальная выручка</h3>
                         <p className={styles.blockDsc}>За счёт заполенения всех рекламных мест по высокой цене</p>
                     </div>

@@ -6,7 +6,7 @@ import Image from "next/image";
 const Reports: React.FC = () => {
 
     return (
-        <section className={styles.reports}>
+        <section id="reports" className={styles.reports}>
             <div className="container">
                 <div className={styles.wrapper}>
                     <h2 className={styles.title}>

@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.5px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.black {
+  background: var(--black, #1D1D1B);
+}
+
+@media (max-width: 988px) {
+  .button {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=Button.module.css.map */

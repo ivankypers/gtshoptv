@@ -1,0 +1,60 @@
+.main {
+  background-image: url("/mainbg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0 180px 0;
+}
+
+.title {
+  color: var(--black, #1D1D1B);
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 88px */
+  letter-spacing: -3.2px;
+  margin-bottom: 32px;
+}
+
+.subtitle {
+  max-width: 626px;
+  color: var(--black, #1D1D1B);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  margin-bottom: 80px;
+}
+
+@media (max-width: 988px) {
+  .main {
+    padding: 80px 0 120px 0;
+  }
+  .title {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 57.2px */
+    letter-spacing: -2.08px;
+  }
+  .subtitle {
+    max-width: 393px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    padding: 50px 0 80px 0;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=Main.module.css.map */
