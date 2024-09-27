@@ -13,8 +13,14 @@ const Header: React.FC = () => {
         setMenuOpen(!menuOpen);
     };
 
+    const handleLinkClick = () => {
+        setMenuOpen(false);
+    };
+
     useEffect(() => {
         const handleScroll = () => {
+            if (window.innerWidth <= 430) return;
+
             const balanceSection = document.getElementById('balance');
             const reportsSection = document.getElementById('reports');
             const balanceRect = balanceSection?.getBoundingClientRect();
@@ -50,10 +56,10 @@ const Header: React.FC = () => {
                 </div>
                 <ul className={styles.list}>
                     <li className={styles.item}>
-                        <a className={clsx(styles.link, {[styles.highlight]: highlightAdvantages})} href="#balance">Преимущества</a>
+                        <a className={clsx(styles.link, {[styles.highlight]: highlightAdvantages})} href="#balance" onClick={handleLinkClick}>Преимущества</a>
                     </li>
                     <li className={styles.item}>
-                        <a className={clsx(styles.link, {[styles.highlight]: highlightHowWeWork})} href="#reports">Как работаем</a>
+                        <a className={clsx(styles.link, {[styles.highlight]: highlightHowWeWork})} href="#reports" onClick={handleLinkClick}>Как работаем</a>
                     </li>
                 </ul>
                 <button
@@ -66,10 +72,10 @@ const Header: React.FC = () => {
             <div className={clsx(styles.menu, {[styles.menuOpen]: menuOpen})}>
                 <ul>
                     <li className={styles.item}>
-                        <a className={clsx(styles.link, {[styles.highlight]: highlightAdvantages})} href="#balance">Преимущества</a>
+                        <a className={clsx(styles.link, {[styles.highlight]: highlightAdvantages})} href="#balance" onClick={handleLinkClick}>Преимущества</a>
                     </li>
                     <li className={styles.item}>
-                        <a className={clsx(styles.link, {[styles.highlight]: highlightHowWeWork})} href="#reports">Как работаем</a>
+                        <a className={clsx(styles.link, {[styles.highlight]: highlightHowWeWork})} href="#reports" onClick={handleLinkClick}>Как работаем</a>
                     </li>
                 </ul>
             </div>

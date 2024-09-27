@@ -150,5 +150,10 @@
     transform: rotate(90deg);
   }
 }
+@media (max-width: 430px) {
+  .balance {
+    padding-top: 60px;
+  }
+}
 
 /*# sourceMappingURL=Balance.module.css.map */
