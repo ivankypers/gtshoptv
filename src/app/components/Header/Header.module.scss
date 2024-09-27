@@ -154,8 +154,9 @@
 
   .menu {
     z-index: 111;
+    pointer-events: none;
     position: fixed;
-    right: -100%;
+    right: -100vh;
     top: 0;
     display: flex;
     width: 283px;
@@ -166,12 +167,14 @@
     align-items: flex-start;
     flex-shrink: 0;
     background: var(--white, #FFF);
-    transition: right 0.2s ease-in-out;
+    transition: right 0.2s ease-in-out, opacity 0.2s ease-in-out;
 
   }
 
   .menuOpen {
+    opacity: 1;
     right: 0;
+    pointer-events: auto;
   }
 }
 
